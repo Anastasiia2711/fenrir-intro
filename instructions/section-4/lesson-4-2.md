@@ -129,7 +129,7 @@ Check the log to make sure your commit has been published:
     git log --oneline
 
 Create a pull request and submit:
-
+gi
 [View instructions](../common/how-to-pull-request.md)
 
 ---
