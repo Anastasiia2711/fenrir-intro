@@ -93,7 +93,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Create a `for` loop to iterate over your `skills` Array, starting at index 0
 - [ ] Inside the loop, create a new list item (`li`) element and store it in a variable named `skill`
   - hint: `createElement` method
-- [ ] On the next line, set the inner text of your `skill` variable to the value of the current Array element
+- [ ] On the next line, set the inner text of your `skill` variable to the value of the current Arrayconst element
   - hint: access the Array element using bracket notation
 - [ ] On the next line, append the `skill` element to the `skillsList` element
   - hint: `appendChild` method
