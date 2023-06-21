@@ -80,7 +80,7 @@ Now, open the project directory in your code editor and continue to the next sec
 
 - [ ] Inside the callback function, on the very last line, add a new line of code to clear the form
   - hint: `reset` method
-- [ ] Save and refresh your browser
+- [ ] Save and rzefresh your browser
 
 #### Display Messages in List
 
