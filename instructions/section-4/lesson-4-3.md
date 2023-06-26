@@ -106,6 +106,7 @@ Now, open the project directory in your code editor and continue to the next sec
 
 ![Final Result for Lesson 4.3](../assets/section-4/lesson-4-3-result.png)
 
+
 #### Stretch Goals
 
 These tasks are **entirely optional**, but if you'd like a challenge then do your best to complete each item.

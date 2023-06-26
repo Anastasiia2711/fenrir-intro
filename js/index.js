@@ -23,9 +23,9 @@ const messageForm = document.getElementsByName('leave_message');
 messageForm.item(0).addEventListener("submit", (event) => {
     event.preventDefault();
    
-    const name = event.target.name.value;
-    const email = event.target.email.value;
-    const message = event.target.message.value;
+    const name = event.target.usersName.value;
+    const email = event.target.usersEmail.value;
+    const message = event.target.usersMessage.value;
     console.log(name);
     console.log(email);
     console.log(message);
@@ -35,7 +35,7 @@ messageForm.item(0).addEventListener("submit", (event) => {
     const newMessage = document.createElement('li');
     const editMessage = document.createElement('li');
     newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> send: <span>${message}</span>`;
-    editMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> send: <span>${message}</span>`;
+  
     
     const removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
@@ -49,17 +49,17 @@ messageForm.item(0).addEventListener("submit", (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-    const editButton = document.createElement('button');
-    editButton.innerText = 'edit';
-    editButton.type = 'button';
+//     const editButton = document.createElement('button');
+//     editButton.innerText = 'edit';
+//     editButton.type = 'button';
 
-    editButton.addEventListener('click', () => {
-        const entry = editButton.parentNode;
-        entry.edit();
-   });
+//     editButton.addEventListener('click', () => {
+//         const entry = editButton.parentNode;
+//         entry.edit();
+//    });
 
-    editMessage.appendChild(editButton);
-    messageList.appendChild(editMessage);
+//     editMessage.appendChild(editButton);
+//     messageList.appendChild(editMessage);
   
     messageForm.item(0).reset();
 
