@@ -4,12 +4,18 @@
         <title>Information about Eliseeva Anastasiia</title>
         <meta name="description" content="Personality information">
         <meta name="author" content="Anastasiia Eliseeva">
+        <link rel="stylesheet" href = "css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&family=Geologica:wght@700&display=swap" rel="stylesheet">
     </head>
 
     <body>
       <header> 
         <h1>Anastasiia Eliseeva</h1>
+        <div class="image-headshot"><img src="/images/headshot.jpg" width="180" height="200" border ='5px'></div>
         <p><em>On this page I will tell you a little about myself.</em></p>
+    
         <nav>
             <ul>
                 <li>
@@ -28,25 +34,25 @@
         </nav>
       </header>
        
-      <section>
+      <section id="about">
         <h2>About</h2>
-        <p>I'm student of Code the Dream. I have my family. My family includ husband,  
+        <p id="myabout">I'm student of Code the Dream. I have my family. My family includ husband,  
             two boys and french buldog Martin.</p>
       </section>
 
 
-      <section>
+      <section id="experience">
         <h2>Experience</h2>
-        <p>I have experience in a bank as a loan officer and auditor. <br>
+        <p id="myexperience">I have experience in a bank as a loan officer and auditor. <br>
             I'm also a professional photographer.</p>
       </section> 
 
       <section id="skills">
         <h2>Skills</h2>
-        <ul> </ul>
+        <ul id="list"> </ul>
       </section>
 
-      <section>
+      <section id="connect">
         <h2>Connect</h2>
         <ul>
             <li><strong>Email: </strong><a href= "https://accounts.google.com/SignOutOptions?hl=ru&continue=https://mail.google.com&service=mail&ec=GBRAFw"></a>email - nastya.eliseeva84@gmail.com</li>
@@ -60,24 +66,24 @@
 
      <section id = 'form'>
         <h2>Leave a Message</h2>
-            <form name="leave_message">
+            <form id="leave_message" name="leave_message">
                     <label for= 'name'> Name</label>
                     <input id= 'name' type= 'text' name= 'usersName' required= 'true'><br>
                     <label for= 'email'>Email Addres</label><br>
                     <input id= 'email' type= 'email' name= 'usersEmail' required= 'true'><br>
                     <label for= 'message'>Message</label><br>
                     <textarea id= 'message' name= 'usersMessage' required= 'true'></textarea>
-                    <button type= 'submit'>Submit</button> 
+                    <button id="submit" type= 'submit'>Submit</button> 
             </form>
      </section>
 
      <section id= 'messages'>
         <h2>Messages</h2>
-        <ul></ul>
-       
+        <ul id="sendmessage"></ul>
+
      </section>
 
-     <footer>
+     <footer id="footer">
 
      </footer>
      
