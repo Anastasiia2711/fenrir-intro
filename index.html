@@ -17,18 +17,24 @@
         <p><em>On this page I will tell you a little about myself.</em></p>
     
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li>
-                    <a href ="#">Home</a>
+                    <a href ="#home">Home</a>
                 </li>
                 <li>
-                    <a href ="#">About</a>
+                    <a href ="#about">About</a>
                 </li>
                 <li>
-                    <a href ="#">Experience</a>
+                    <a href ="#experience">Experience</a>
                 </li>
                 <li>
-                    <a href ="#">Connect</a>
+                    <a href ="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href ="#connect">Connect</a>
+                </li>
+                <li>
+                    <a href ="#leave_message">Leave message</a>
                 </li>
             </ul>
         </nav>
@@ -44,7 +50,13 @@
       <section id="experience">
         <h2>Experience</h2>
         <p id="myexperience">I have experience in a bank as a loan officer and auditor. <br>
-            I'm also a professional photographer.</p>
+            I'm also a professional photographer.
+            <div class="experience_box">
+                <div class="box_credit">Bank lending (2005-2007)<br></div>
+                <div class="box_auditor">Audit of banking operations (2008-2022)<br></div>
+                <div class="box_photo">Photographer (2020-current time)<br></div>
+            </div>
+        </p>
       </section> 
 
       <section id="skills">
@@ -67,6 +79,7 @@
      <section id = 'form'>
         <h2>Leave a Message</h2>
             <form id="leave_message" name="leave_message">
+                 <div class="box_leave_message">
                     <label for= 'name'> Name</label>
                     <input id= 'name' type= 'text' name= 'usersName' required= 'true'><br>
                     <label for= 'email'>Email Addres</label><br>
@@ -74,7 +87,8 @@
                     <label for= 'message'>Message</label><br>
                     <textarea id= 'message' name= 'usersMessage' required= 'true'></textarea>
                     <button id="submit" type= 'submit'>Submit</button> 
-            </form>
+                 </div> 
+                </form>
      </section>
 
      <section id= 'messages'>
@@ -84,6 +98,7 @@
      </section>
 
      <footer id="footer">
+        <div class="box_footer"></div>
 
      </footer>
      
