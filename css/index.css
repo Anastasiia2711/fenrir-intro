@@ -1,65 +1,105 @@
 body {
- background-color: rgb(164, 179, 202);
- color: rgb(158, 17, 146);
+ background-color: rgb(215, 219, 226);
+ color: rgb(173, 34, 175);  
  font-family: 'Geologica', sans-serif;;
- padding: 1rem;
+ padding: 0.5rem;
  padding-left: 2rem;
+ padding-top: 10px;
 }
 
-header {
-    display: block;
-    justify-content: space-between;
-    position: sticky;
+.header {
+    text-align: center; 
+}
+
+.nav {
     background-position: rgb(102, 143, 221);
+    position: sticky;
     top: 0px;
-    left: 0px;
-    right: 200px;
-    height: 0px;
-    width: 20%;
-   
+    height: auto;
 }
 
-#about, #experience, #skills, #connect, #form, #messages {
-    padding: 0.2px;    
+.image-headshot {
+    float: right;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.navigation {
+    list-style-type: none;
+    position: fixed;
+    top: 0%;
+    display: inline;
+    width: 80%;
+    padding: 5px;
+    background-color: rgb(230, 233, 210);
+    border-style: dashed;
+    
+}
+
+.navigation li {
+    float: left;
+}
+
+
+.navigation a{
+    background-color: rgb(164, 179, 202);
+    display: block;
+    border: 1px rgb(21, 21, 22);
+    font-size: 25px;
+    color: rgb(173, 34, 175);  
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px 15px;
+    list-style: none;
+    width: 100%;
+}
+
+.navigation a:hover{
+    background-color: rgb(102, 143, 221);
+}
+
+#home, #about, #experience, #skills, #connect, #form, #messages {
+    color: rgb(23, 48, 214);
+    text-align: center;
 }
 
 h1{
-  font-size: 60px;  
+  font-size: 50px;  
   font-weight: bold;
-  color: rgb(14, 30, 129);
+  color: rgb(23, 48, 214);
   font-style: oblique;
   font-stretch: narrower;
   text-align: center;
+  text-shadow: 10px 5px 6px rgb(114, 123, 179);
+  padding: 1em;
 }
 
 h2{
     font-size: 40px;  
     font-weight: 380;
-    color: rgb(27, 14, 207);
+    color: rgb(23, 48, 214);
     font-style: oblique;
     font-stretch: narrower;
     text-align: center;
   }
 
 #myabout {
-    border: 5px;
-    border-color: beige;
-    border-style: ridge;
+    border: 2px;
     font-size: 20px;
     font-weight: bold;
     font-style: unset;
     color:rgb(18, 56, 207);
-    background-color: rgb(66, 169, 221);    
+    background-color: rgb(178, 193, 227);    
 }
 
 #myexperience {
-  border: 5px;
-  border-color: beige;
-  border-style: ridge;
+  border: 2px;
   font-size: 20px;
   font-weight: bold;
   color:rgb(18, 56, 207);
-  background-color: rgb(66, 169, 221);
+  background-color:  rgb(178, 193, 227);
 } 
 
 .experience_box {
@@ -82,6 +122,10 @@ h2{
     padding: 20px;
 }
 
+.box_credit:hover {
+    background-color: rgb(199, 211, 136);
+}
+
 .box_auditor {
     background-color: rgb(199, 211, 136);
     width: 30%;
@@ -89,11 +133,19 @@ h2{
     padding: 20px;
 }
 
+.box_auditor:hover {
+    background-color: rgb(168, 137, 178);
+}
+
 .box_photo {
     background-color: rgb(168, 137, 178);
     width: 30%;
     margin: 15px;
     padding: 20px;
+}
+
+.box_photo:hover {
+    background-color: rgb(110, 162, 207);
 }
   
 #list {
@@ -103,8 +155,25 @@ h2{
     font-size: 20px;
     font-style: italic;
     color:rgb(18, 56, 207);
-    background-color: rgb(66, 169, 221);
+    background-color:  rgb(178, 193, 227);
+    margin: 10px 10px 10px 10px;
+    list-style-type: none;
   } 
+
+  .listConnect {
+    list-style-type: none;
+  }
+
+  .listConnect li {
+    display: inline-flexbox;
+    background-color: rgb(240, 240, 192);
+    width: 50%;
+    text-align: center;
+    margin-left: 270px;
+    padding-top: 10px;
+
+  }
+
 
 #leave_message {
     border: 5px;
@@ -112,14 +181,14 @@ h2{
     border-style: ridge;
     font-size: 20px;
     color:rgb(18, 56, 207);
-    background-color: rgb(66, 169, 221);
+    background-color:  rgb(178, 193, 227);
 } 
 
 #name {
     margin: 2%;
     border: 8px;
     border-color: rgb(92, 176, 249);
-    background-color: rgb(149, 202, 248);
+    background-color: rgb(178, 193, 227);
     padding: 0.5%;
 }
 
@@ -127,49 +196,48 @@ h2{
     margin: 2%;
     border: 8px;
     border-color: rgb(92, 176, 249);
-    background-color: rgb(149, 202, 248);
+    background-color: rgb(178, 193, 227);
     padding: 0.5%;
 }
 
 #message {
     margin: 2%;
-    border: 8px;
     border-color: rgb(92, 176, 249);
-    background-color: rgb(149, 202, 248);
+    background-color:  rgb(178, 193, 227);
     padding: 0.5%;
 }
 
 #submit:hover {
-    border: 10px;
-    border-color: rgb(172, 9, 104);
-    background-color: rgb(229, 76, 193);
-    border-radius: 15%;
+    border: 3px;
+    border-color: rgb(102, 59, 84);
+    background-color: rgb(168, 137, 178);
+    border-radius: 10%;
     font-size: 20px;
-    padding: 1%;
+    padding: 10px;
 }
 
 #messages {
     display: list-item;
     border: 8px;
     border-color: rgb(17, 80, 136);
-    background-color: rgb(29, 146, 249);
+    background-color: rgb(145, 193, 236);
     padding: 0.5%;
     border-radius: 10%;
 }
 
 #sendmessage{
-    border: 10px;
-    border-color: rgb(172, 9, 104);
-    background-color: rgb(229, 76, 193);
-    border-radius: 15%;
+    border-color: rgb(116, 38, 83);
+    background-color: rgb(168, 137, 178);
+    border-radius: 10%;
     font-size: 20px;
     padding: 1%;  
 }
 
 .box_leave_message {
     border-radius: 15%;
-    background-color: rgb(237, 237, 167);
+    background-color: rgb(240, 240, 192);
     padding: 10px, 5px, 10px, 5px;
+    text-align: center;
 
 }
 
@@ -178,7 +246,7 @@ h2{
     padding: 4px;
     border-radius: 15%;
     border-color: rgb(110, 37, 179);
-    width: 30%;
+    width: 100%;
     height: 30px;
     font-size: 15px;
     text-align: center;
