@@ -6,7 +6,7 @@ copyright.innerHTML = `Anastasiia Eliseeva &copy ${thisYear}`;
 footer.appendChild(copyright);
 
 
-const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'HTML', 'Cypress', 'Trello', 'Photoshop', 'Ligthroom', 'Bridge'];
+const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'HTML', 'Cypress', 'Trello', 'Photoshop', 'Ligthroom', 'Bridge', 'CSS'];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
 

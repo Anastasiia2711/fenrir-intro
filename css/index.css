@@ -1,7 +1,7 @@
 body {
- background-color: rgb(215, 219, 226);
- color: rgb(173, 34, 175);  
- font-family: 'Geologica', sans-serif;;
+ background-color: #BBBBBB;
+ color: #46185F;  
+ font-family: 'Tahoma', sans-serif;;
  padding: 0.5rem;
  padding-left: 2rem;
  padding-top: 10px;
@@ -9,10 +9,11 @@ body {
 
 .header {
     text-align: center; 
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
 
 .nav {
-    background-position: rgb(102, 143, 221);
     position: sticky;
     top: 0px;
     height: auto;
@@ -20,8 +21,8 @@ body {
 
 .image-headshot {
     float: right;
-    border-radius: 50%;
-    padding: 5px;
+    padding-top: 5px;
+    margin-top: 0.5px;
     
 }
 
@@ -30,76 +31,86 @@ body {
     position: fixed;
     top: 0%;
     display: inline;
-    width: 80%;
+    width: 100%;
     padding: 5px;
-    background-color: rgb(230, 233, 210);
+    padding-left: 15px;
+    background-color: #BBBBBB;
     border-style: dashed;
-    
 }
 
 .navigation li {
     float: left;
+    margin: 5px;
 }
 
 
 .navigation a{
-    background-color: rgb(164, 179, 202);
-    display: block;
+    display: inline-block;
     border: 1px rgb(21, 21, 22);
-    font-size: 25px;
-    color: rgb(173, 34, 175);  
+    font-size: 15px;
+    color: #46185F;  
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 15px 15px;
+    padding: 10px 10px 0px 0px;
     list-style: none;
     width: 100%;
 }
 
 .navigation a:hover{
-    background-color: rgb(102, 143, 221);
+    background-color: rgb(199, 211, 136);
 }
 
 #home, #about, #experience, #skills, #connect, #form, #messages {
-    color: rgb(23, 48, 214);
+    color: #297CA0;
     text-align: center;
+}
+
+#about {
+    flex-wrap: wrap;
 }
 
 h1{
   font-size: 50px;  
   font-weight: bold;
-  color: rgb(23, 48, 214);
+  color: #297CA0;
   font-style: oblique;
   font-stretch: narrower;
   text-align: center;
-  text-shadow: 10px 5px 6px rgb(114, 123, 179);
+  text-shadow: 10px 5px 6px rgb(110, 160, 180);
   padding: 1em;
+  
 }
 
 h2{
-    font-size: 40px;  
-    font-weight: 380;
-    color: rgb(23, 48, 214);
-    font-style: oblique;
+    font-size: 30px;  
+    font-weight: 350;
+    color: #297CA0;
+    font-style: neutro;
     font-stretch: narrower;
     text-align: center;
+    font-weight: bold;
   }
 
 #myabout {
-    border: 2px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
     font-style: unset;
-    color:rgb(18, 56, 207);
-    background-color: rgb(178, 193, 227);    
+    color: #297CA0;
+    background-color: #BBBBBB;
+    box-shadow: 3px 3px 3px #E9EA77;
+    width: 70%;
+
 }
 
 #myexperience {
   border: 2px;
   font-size: 20px;
-  font-weight: bold;
-  color:rgb(18, 56, 207);
-  background-color:  rgb(178, 193, 227);
+  font-weight: lighter;
+  color: #297CA0;
+  background-color: #BBBBBB;
+  box-shadow: 3px 3px 3px #E9EA77;
+  max-width: 98%;
 } 
 
 .experience_box {
@@ -116,21 +127,25 @@ h2{
 }
 
 .box_credit {
-    background-color: rgb(110, 162, 207);
+    background-color:  rgb(110, 162, 207);
     width: 30%;
     margin: 15px;
     padding: 20px;
+    box-shadow: 3px 3px 3px rgb(126, 129, 146);
+    border-radius: 5px;
 }
 
 .box_credit:hover {
-    background-color: rgb(199, 211, 136);
+    background-color: #E9EA77;
 }
 
 .box_auditor {
-    background-color: rgb(199, 211, 136);
+    background-color: #E9EA77;
     width: 30%;
     margin: 15px;
     padding: 20px;
+    box-shadow: 3px 3px 3px rgb(126, 129, 146);
+    border-radius: 5px;
 }
 
 .box_auditor:hover {
@@ -142,6 +157,8 @@ h2{
     width: 30%;
     margin: 15px;
     padding: 20px;
+    box-shadow: 3px 3px 3px rgb(126, 129, 146);
+    border-radius: 5px;
 }
 
 .box_photo:hover {
@@ -149,61 +166,71 @@ h2{
 }
   
 #list {
-    border: 5px;
-    border-color: beige;
-    border-style: ridge;
     font-size: 20px;
     font-style: italic;
-    color:rgb(18, 56, 207);
-    background-color:  rgb(178, 193, 227);
-    margin: 10px 10px 10px 10px;
+    color:#46185F;
+    margin: 15px 15px 15px 15px;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 20px;
   } 
+
+  #list li {
+    background-color:  #E9EA77;
+    box-sizing: 30%;
+    border-radius: 10%;
+    box-shadow: 3px 3px 5px rgb(126, 129, 146);
+    padding: 5px 5px 5px 5px;
+  }
 
   .listConnect {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
   }
 
   .listConnect li {
-    display: inline-flexbox;
-    background-color: rgb(240, 240, 192);
     width: 50%;
-    text-align: center;
-    margin-left: 270px;
-    padding-top: 10px;
-
+    box-shadow: 3px 3px 3px rgb(217, 216, 137);
+    margin: 20px;
   }
 
+  /*.box_mail {
+    width: 10%;
+    align-items: center;
+  }*/
+
+#form {
+    display: flex;
+    flex-direction: row;
+}
 
 #leave_message {
-    border: 5px;
-    border-color: beige;
-    border-style: ridge;
     font-size: 20px;
-    color:rgb(18, 56, 207);
-    background-color:  rgb(178, 193, 227);
+    color:#46185F;
+    /*background-color:  rgb(200, 210, 232);*/
+    width: 90%;
 } 
 
-#name {
-    margin: 2%;
-    border: 8px;
-    border-color: rgb(92, 176, 249);
-    background-color: rgb(178, 193, 227);
+#name::before {
+    *margin: 2%;
+    background-color: #BBBBBB;
+    box-shadow:  1px 1px 1px rgb(217, 216, 137);
     padding: 0.5%;
 }
 
 #email {
     margin: 2%;
-    border: 8px;
-    border-color: rgb(92, 176, 249);
-    background-color: rgb(178, 193, 227);
+    background-color: #BBBBBB;
+    box-shadow:  1px 1px 1px rgb(217, 216, 137);
     padding: 0.5%;
 }
 
 #message {
     margin: 2%;
-    border-color: rgb(92, 176, 249);
-    background-color:  rgb(178, 193, 227);
+    background-color: #BBBBBB;
+    box-shadow:  1px 1px 1px rgb(217, 216, 137);
     padding: 0.5%;
 }
 
@@ -218,34 +245,28 @@ h2{
 
 #messages {
     display: list-item;
-    border: 8px;
-    border-color: rgb(17, 80, 136);
-    background-color: rgb(145, 193, 236);
+    box-shadow: 3px 3px 3px rgb(217, 216, 137);
+    background-color: #BBBBBB;
     padding: 0.5%;
-    border-radius: 10%;
 }
 
 #sendmessage{
-    border-color: rgb(116, 38, 83);
-    background-color: rgb(168, 137, 178);
-    border-radius: 10%;
+    box-shadow: 3px 3px 3px rgb(217, 216, 137);
+    background-color: #BBBBBB;
     font-size: 20px;
     padding: 1%;  
 }
 
 .box_leave_message {
-    border-radius: 15%;
-    background-color: rgb(240, 240, 192);
     padding: 10px, 5px, 10px, 5px;
     text-align: center;
-
+    background-color: #BBBBBB;
 }
 
 #footer {
-    background-color: rgb(190, 205, 237);
+    background-color: #BBBBBB;
+    border-style: dashed;
     padding: 4px;
-    border-radius: 15%;
-    border-color: rgb(110, 37, 179);
     width: 100%;
     height: 30px;
     font-size: 15px;
