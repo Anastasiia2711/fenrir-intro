@@ -1,3 +1,6 @@
+
+//DOM
+//create Footer
 const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('footer');
@@ -5,7 +8,7 @@ const copyright = document.createElement('p');
 copyright.innerHTML = `Anastasiia Eliseeva &copy ${thisYear}`;
 footer.appendChild(copyright);
 
-
+//create Skills
 const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'HTML', 'Cypress', 'Trello', 'Photoshop', 'Ligthroom', 'Bridge', 'CSS'];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
@@ -16,9 +19,11 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill)
 }
 
+//create message
 const messageSection = document.getElementById('messages');
 messageSection.hidden = true;
 
+//create leave message
 const messageForm = document.getElementsByName('leave_message');
 messageForm.item(0).addEventListener("submit", (event) => {
     event.preventDefault();
@@ -36,7 +41,7 @@ messageForm.item(0).addEventListener("submit", (event) => {
     const editMessage = document.createElement('li');
     newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> send: <span>${message}</span>`;
 
-
+//create remove button
     const removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
@@ -69,26 +74,43 @@ messageForm.item(0).addEventListener("submit", (event) => {
 
 //added GitHub links using AJAX
 
-const githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/Anastasiia2711/repos');
-githubRequest.send();
+// const githubRequest = new XMLHttpRequest();
+//githubRequest.open('GET', 'https://api.github.com/users/Anastasiia2711/repos');
+// githubRequest.send();
 
-githubRequest.addEventListener('load', function () {
-    const repositories = JSON.parse(githubRequest.response);
-    console.log(repositories);
+// githubRequest.addEventListener('load', function () {
+//     const repositories = JSON.parse(githubRequest.response);
+//     console.log(repositories);
 
-    const projectSection = document.getElementById('projects');
-    // const projectSection = document.querySelector("#projects")
-    console.log(projectSection)
-    const projectList = projectSection.querySelector('ul');
-    console.log(projectList);
+//     const projectSection = document.getElementById('projects');
+//     console.log(projectSection)
+//     const projectList = projectSection.querySelector('ul');
+//     console.log(projectList);
+
+//     for (let i = 0; i < repositories.length; i++) {
+//         const project = document.createElement('li');
+//         project.innerHTML += `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`
+//         projectList.appendChild(project);
+//     }
+// });
+
+//API
+fetch('https://api.github.com/users/Anastasiia2711/repos')
+.then((response) => response.json())
+.then(repositories => {
+
+    const projectSection = document.getElementById('projects')
+    //console.log(projectSection)
+    const projectList = projectSection.querySelector('ul')
+    //console.log(projectList);
 
     for (let i = 0; i < repositories.length; i++) {
         const project = document.createElement('li');
         project.innerHTML += `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`
         projectList.appendChild(project);
     }
-});
+})
+.catch(console.error);
 
 
 

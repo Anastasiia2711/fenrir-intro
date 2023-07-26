@@ -20,18 +20,18 @@ body {
 }
 
 .image-headshot {
-    float: right;
-    padding-top: 5px;
-    margin-top: 0.5px;
-    
+    margin-right: 8rem;
 }
 
 .navigation {
     list-style-type: none;
     position: fixed;
     top: 0%;
-    display: inline;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    width: 90%;
     padding: 5px;
     padding-left: 15px;
     background-color: #BBBBBB;
@@ -39,26 +39,25 @@ body {
 }
 
 .navigation li {
-    float: left;
     margin: 5px;
 }
-
 
 .navigation a{
     display: inline-block;
     border: 1px rgb(21, 21, 22);
-    font-size: 15px;
+    font-size: 25px;
     color: #46185F;  
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px 10px 10px 10px;
     padding: 10px 10px 0px 0px;
     list-style: none;
     width: 100%;
 }
 
 .navigation a:hover{
-    background-color: rgb(199, 211, 136);
+    background-color: #E9EA77;
+    margin-top: 20px;
+
 }
 
 #home, #about, #experience, #skills, #connect, #form, #messages {
@@ -70,6 +69,15 @@ body {
     flex-wrap: wrap;
 }
 
+.about-text {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1{
   font-size: 50px;  
   font-weight: bold;
@@ -78,8 +86,7 @@ h1{
   font-stretch: narrower;
   text-align: center;
   text-shadow: 10px 5px 6px rgb(110, 160, 180);
-  padding: 1em;
-  
+  padding: 80px 0 10px 0;
 }
 
 h2{
@@ -99,8 +106,9 @@ h2{
     color: #297CA0;
     background-color: #BBBBBB;
     box-shadow: 3px 3px 3px #E9EA77;
-    width: 70%;
-
+    width: 80%;
+    padding: 0 15px 15px 0;
+    text-align: justify;
 }
 
 #myexperience {
@@ -111,6 +119,9 @@ h2{
   background-color: #BBBBBB;
   box-shadow: 3px 3px 3px #E9EA77;
   max-width: 98%;
+  width: 80%;
+  padding: 0 15px 15px 0;
+  text-align: justify;
 } 
 
 .experience_box {
@@ -169,11 +180,15 @@ h2{
     font-size: 20px;
     font-style: italic;
     color:#46185F;
-    margin: 15px 15px 15px 15px;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 600px;
+    height: 150px;
+    justify-content: space-around;
+    margin-left: 20%;
+    
   } 
 
   #list li {
@@ -182,6 +197,27 @@ h2{
     border-radius: 10%;
     box-shadow: 3px 3px 5px rgb(126, 129, 146);
     padding: 5px 5px 5px 5px;
+    margin: 5px 20px 5px 20px;
+  }
+
+  #listprojects {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    width: 67%;
+    margin-left: 15%;
+    text-align: left;
+  }
+
+  #listprojects li {
+    background-color:  #E9EA77;
+    border-radius: 10%;
+    box-shadow: 3px 3px 5px rgb(126, 129, 146);
+    padding: 3px 10px 3px 10px;
+  }
+
+  #projects ul {
+    list-style-type: none;
   }
 
   .listConnect {
@@ -192,46 +228,46 @@ h2{
 
   .listConnect li {
     width: 50%;
-    box-shadow: 3px 3px 3px rgb(217, 216, 137);
+    box-shadow: 1px 1px 1px #E9EA77;
     margin: 20px;
   }
-
-  /*.box_mail {
-    width: 10%;
-    align-items: center;
-  }*/
-
-#form {
-    display: flex;
-    flex-direction: row;
-}
 
 #leave_message {
     font-size: 20px;
     color:#46185F;
-    /*background-color:  rgb(200, 210, 232);*/
     width: 90%;
 } 
 
-#name::before {
-    *margin: 2%;
+#name {
+    margin: 5%; 
     background-color: #BBBBBB;
-    box-shadow:  1px 1px 1px rgb(217, 216, 137);
-    padding: 0.5%;
+    box-shadow:  1px 1px 1px rgb(38, 38, 38);
+    padding: 3%;
 }
 
 #email {
-    margin: 2%;
+    margin: 5%;
     background-color: #BBBBBB;
-    box-shadow:  1px 1px 1px rgb(217, 216, 137);
-    padding: 0.5%;
+    box-shadow: 1px 1px 1px rgb(38, 38, 38);
+    padding: 3%;
 }
 
 #message {
-    margin: 2%;
+    margin: 5%;
     background-color: #BBBBBB;
-    box-shadow:  1px 1px 1px rgb(217, 216, 137);
-    padding: 0.5%;
+    box-shadow:  1px 1px 1px rgb(38, 38, 38);
+    padding: 3%;
+}
+
+#submit {
+    border: 3px;
+    border-color: #297CA0;
+    background-color: #8bb8cb;
+    border-radius: 10%;
+    font-size: 20px;
+    padding: 3%;
+    flex-grow: 1;
+    margin: 5%;
 }
 
 #submit:hover {
@@ -241,33 +277,39 @@ h2{
     border-radius: 10%;
     font-size: 20px;
     padding: 10px;
+    margin: 5%;
 }
 
 #messages {
     display: list-item;
-    box-shadow: 3px 3px 3px rgb(217, 216, 137);
     background-color: #BBBBBB;
     padding: 0.5%;
+    list-style-type: none;
 }
 
 #sendmessage{
-    box-shadow: 3px 3px 3px rgb(217, 216, 137);
     background-color: #BBBBBB;
     font-size: 20px;
-    padding: 1%;  
+    color: #46185F;
+    padding: 2%;  
+    box-shadow: 3px 3px 3px rgb(217, 216, 137);
 }
 
 .box_leave_message {
-    padding: 10px, 5px, 10px, 5px;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    margin: 10px 300px 10px 400px;
     text-align: center;
-    background-color: #BBBBBB;
+    background-color: #E9EA77;
+    margin-top: 5%;
 }
 
 #footer {
     background-color: #BBBBBB;
     border-style: dashed;
     padding: 4px;
-    width: 100%;
+    width: 95%;
     height: 30px;
     font-size: 15px;
     text-align: center;
@@ -277,13 +319,13 @@ h2{
 @media screen and (max-width: 600px){
     .body {
         font-size: 10px;
-        background-color: aliceblue;
+        background-color: #bce0f0;
     }
 }
 
 @media screen and (min-width: 900px){
     .body {
         font-size: 20px;
-        background-color: aliceblue;
+        background-color: bce0f0;
     }
 }
