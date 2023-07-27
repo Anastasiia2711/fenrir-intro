@@ -13,7 +13,7 @@
     <body>
       <header class="header"> 
         <h1>Anastasiia Eliseeva</h1>
-        <p><em>On this page I will tell you a little about myself.</em></p>
+        <p class="onthispage"><em>On this page I will tell you a little about myself.</em></p>
     
         <nav class="nav">
             <ul class="navigation">
@@ -46,7 +46,7 @@
         <p id="myabout">I'm student of Code the Dream. I have my family. My family includ husband,  
             two boys and french buldog Martin. My family moved in USA 3 years ago from Russia. I live in the city Charlotte, NC.</p>
         </div>
-           <div class="image-headshot"><img src="images/headshot.jpg" width="250" height="270" style="border-radius: 10px; margin: 0px 0 px 0 px 30px" alt="My picture."></div>
+           <div class="image-headshot"><img src="images/headshot.jpg" width="270" height="300" style="border-radius: 10px; margin: 0px 0 px 0 px 30px" alt="My picture."></div>
         </div>
       </section>
 
@@ -58,7 +58,8 @@
             <div class="experience_box">
                 <div class="box_credit">Bank lending (2005-2007)<br></div>
                 <div class="box_auditor">Audit of banking operations (2008-2022)<br></div>
-                <div class="box_photo">Photographer (2020-current time). Student CTD (April, 2023 - current time).<br></div>
+                <div class="box_photo">Photographer (2020-current time).<br></div>
+                <div class="box_student">Student CTD (April, 2023 - current time).<br></div>
             </div>
         </p>
       </section> 
@@ -87,11 +88,11 @@
         <h2>Leave a Message</h2>
             <form id="leave_message" name="leave_message">
                  <div class="box_leave_message">
-                    <label for= 'name'> Name</label>
+                    <label id="labelname" for= 'name'> Name</label>
                     <input id= 'name' type= 'text' name= 'usersName' required= 'true'><br>
-                    <label for= 'email'>Email Addres</label><br>
+                    <label id="labelemail" for= 'email'>Email Addres</label><br>
                     <input id= 'email' type= 'email' name= 'usersEmail' required= 'true'><br>
-                    <label for= 'message'>Message</label><br>
+                    <label id= 'labelmessage' for= 'message'>Message</label><br>
                     <textarea id= 'message' name= 'usersMessage' required= 'true'></textarea>
                     <button id="submit" type= 'submit'>Submit</button> 
                  </div> 
