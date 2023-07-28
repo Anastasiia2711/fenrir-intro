@@ -4,6 +4,7 @@
         <title>Information about Eliseeva Anastasiia</title>
         <meta name="description" content="Personality information">
         <meta name="author" content="Anastasiia Eliseeva">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <link rel="stylesheet" href = "css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +15,12 @@
       <header class="header"> 
         <h1>Anastasiia Eliseeva</h1>
         <p class="onthispage"><em>On this page I will tell you a little about myself.</em></p>
-    
-        <nav class="nav">
+ 
+        <div class="burgermenu">
+        <input type="checkbox" id="burger">
+        <div class="npg-humburger" ><a><img src="images/menu.png" width="60" height="60"></a></div>
+        
+            <nav class="nav">
             <ul class="navigation">
                 <li class="li">
                     <a href ="#home">Home</a>
@@ -42,7 +47,7 @@
       <section id="about">
         <div class="container">
           <div class="about-text">
-        <h2>About</h2>
+        <h2 class="aboutcenter">About</h2>
         <p id="myabout">I'm student of Code the Dream. I have my family. My family includ husband,  
             two boys and french buldog Martin. My family moved in USA 3 years ago from Russia. I live in the city Charlotte, NC.</p>
         </div>
@@ -89,10 +94,10 @@
             <form id="leave_message" name="leave_message">
                  <div class="box_leave_message">
                     <label id="labelname" for= 'name'> Name</label>
-                    <input id= 'name' type= 'text' name= 'usersName' required= 'true'><br>
-                    <label id="labelemail" for= 'email'>Email Addres</label><br>
+                    <input id= 'name' type= 'text' name= 'usersName' required= 'true'>
+                    <label id="labelemail" for= 'email'>Email Addres</label>
                     <input id= 'email' type= 'email' name= 'usersEmail' required= 'true'><br>
-                    <label id= 'labelmessage' for= 'message'>Message</label><br>
+                    <label id= 'labelmessage' for= 'message'>Message</label>
                     <textarea id= 'message' name= 'usersMessage' required= 'true'></textarea>
                     <button id="submit" type= 'submit'>Submit</button> 
                  </div> 
@@ -102,6 +107,8 @@
      <section id= 'messages'>
         <h2>Messages</h2>
         <ul id="sendmessage"></ul>
+        <span></span>
+        <span></span>
 
      </section>
 

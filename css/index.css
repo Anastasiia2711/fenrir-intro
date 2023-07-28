@@ -33,6 +33,14 @@ body {
     justify-content: space-between;
 }
 
+.npg-humburger {
+    display: none;
+}
+
+#burger {
+    display: none;
+}
+
 .navigation {
     list-style-type: none;
     position: fixed;
@@ -88,6 +96,10 @@ body {
     justify-content: space-between;
 }
 
+.aboutcenter {
+    padding-left: 40%;
+}
+
 h1{
     font-size: 50px;  
     font-weight: bold;
@@ -123,6 +135,10 @@ h2{
     width: 95%;
     padding: 0 15px 15px 0;
     text-align: justify;
+}
+
+#experience {
+    margin-top: -10px;
 }
 
 #myexperience {
@@ -223,6 +239,7 @@ h2{
     flex-direction: column;
     height: 150px;
     justify-content: center;
+    margin-left: 13%;
   } 
 
   #list li {
@@ -251,9 +268,14 @@ h2{
     align-items: center;
     background-color:  #F0F0F0;
     border-radius: 10%;
+    border: solid;
     border-color: #F1D00A;
     box-shadow: 3px 3px 5px rgb(126, 129, 146);
     padding: 10px 20px 10px 20px;
+  }
+
+  #listprojects li a {
+    color: #21325E;
   }
 
   #projects ul {
@@ -317,7 +339,7 @@ h2{
 }
 
 #labelmessage {
-    margin-top: 3px;
+    margin-top: -10px;
   }
 
 #message {
@@ -327,6 +349,7 @@ h2{
     box-shadow:  1px 1px 1px #21325E;
     padding: 0.5%;
     padding: 3%;
+    height: 47.22px;
 }
 
 #submit {
@@ -336,8 +359,9 @@ h2{
     border-radius: 10%;
     font-size: 20px;
     color: #F1D00A;
+    background-color: #3E497A;
     padding: 5%;
-   
+    cursor: pointer;
 }
 
 #submit:hover {
@@ -358,7 +382,7 @@ h2{
     list-style-type: none;
 }
 
-#sendmessage{
+#sendmessage {
     box-shadow: 3px 3px 3px rgb(217, 216, 137);
     background-color: #F0F0F0;
     font-size: 20px;
@@ -368,27 +392,97 @@ h2{
     box-shadow: 3px 3px 3px rgb(217, 216, 137);
 }
 
+#sendmessage li {
+    list-style-type: none;
+}
+
+#sendmessage li a{
+    margin: 20px;
+    font-size: 30px;
+    color:#21325E
+}
+
+#sendmessage li span{
+    margin: 20px;
+    font-size: 30px;
+    color: #21325E;
+}
+
 #footer {
     background-color: #F0F0F0;
     border-style: dashed;
     padding: 4px;
     vertical-align:middle;
     width: 100%;
-    height: 30px;
+    height: 50px;
     font-size: 15px;
     text-align: center;
 }
 
+.box_footer {
+    padding-bottom: 10px;
+}
+
+/*mobil version*/
 @media screen and (max-width: 600px){
     .body {
-        font-size: 10px;
-        background-color: #bce0f0;
+        width: 60%;
+        font-size: 20px;
+        background-color: #F1D00A;
     }
+
+    .header {
+        text-align: center; 
+        padding-top: 5px;
+        padding-bottom: 2px;
+    }
+    
+    .onthispage {
+        text-align: center;
+        font-size: larger;
+        will-change: scroll-position;
+    }
+    
+    .image-headshot {
+        position: relative;
+        margin: auto;
+    }
+    
+    .npg-humburger {
+        display: block;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .navigation {
+        display: block;
+        justify-content: flex-end;
+    }
+
+    .navigation:hover {
+        list-style-type: none;
+        position: fixed;
+        left: 30%;
+        top: 5rem;
+        border: solid #21325E;
+        display: block;
+        align-items: left;
+        height: 5vh;
+        width: 90%;
+        padding: 5px;
+        padding-left: 15px;
+        background-color: #F0F0F0;
+    }
+
+    .listConnect li{
+        size: fa-2x;
+      }
+
 }
 
 @media screen and (min-width: 900px){
     .body {
         font-size: 20px;
-        background-color: #bce0f0;
+        background-color: #F1D00A;
     }
 }
