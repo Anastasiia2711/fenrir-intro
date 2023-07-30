@@ -1,125 +1,139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Information about Eliseeva Anastasiia</title>
-        <meta name="description" content="Personality information">
-        <meta name="author" content="Anastasiia Eliseeva">
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <link rel="stylesheet" href = "css/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&family=Geologica:wght@700&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-      <header class="header"> 
+<!--Whole informaion project-->
+
+<head>
+    <title>Information about Eliseeva Anastasiia</title>
+    <meta name="description" content="Personality information">
+    <meta name="author" content="Anastasiia Eliseeva">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&family=Geologica:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+    <script src="https://kit.fontawesome.com/95967ac526.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!--Information about me-->
+
+<body>
+    <header class="header">
         <h1>Anastasiia Eliseeva</h1>
         <p class="onthispage"><em>On this page I will tell you a little about myself.</em></p>
- 
-        <div class="burgermenu">
-        <input type="checkbox" id="burger">
-        <div class="npg-humburger" ><a><img src="images/menu.png" width="60" height="60"></a></div>
-        
-            <nav class="nav">
-            <ul class="navigation">
-                <li class="li">
-                    <a href ="#home">Home</a>
-                </li>
-                <li>
-                    <a href ="#about">About</a>
-                </li>
-                <li>
-                    <a href ="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href ="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href ="#connect">Connect</a>
-                </li>
-                <li>
-                    <a href ="#leave_message">Leave message</a>
-                </li>
-            </ul>
-        </nav>
-      </header>
-       
-      <section id="about">
-        <div class="container">
-          <div class="about-text">
-        <h2 class="aboutcenter">About</h2>
-        <p id="myabout">I'm student of Code the Dream. I have my family. My family includ husband,  
-            two boys and french buldog Martin. My family moved in USA 3 years ago from Russia. I live in the city Charlotte, NC.</p>
-        </div>
-           <div class="image-headshot"><img src="images/headshot.jpg" width="270" height="300" style="border-radius: 10px; margin: 0px 0 px 0 px 30px" alt="My picture."></div>
-        </div>
-      </section>
 
-
-      <section id="experience">
-        <h2>Experience</h2>
-        <p id="myexperience">I have experience in a bank as a loan officer and auditor.  <br>
-            My hobby photography has grown  into a profession.  I like to create a beautiful and creative picture. This curse was my first introduction to HTML and CSS. This is very exciting for me!
-            <div class="experience_box">
-                <div class="box_credit">Bank lending (2005-2007)<br></div>
-                <div class="box_auditor">Audit of banking operations (2008-2022)<br></div>
-                <div class="box_photo">Photographer (2020-current time).<br></div>
-                <div class="box_student">Student CTD (April, 2023 - current time).<br></div>
+        <nav class="nav">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <p>Menu</p>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul class="navigation">
+                        <li class="li"> <a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                        <li><a href="#leave_message">Leave message</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-text">
+                <h2 class="aboutcenter">About</h2>
+                <p id="myabout">I'm student of Code the Dream. I have my family. My family includ husband,
+                    two boys and french buldog Martin. My family moved in USA 3 years ago from Russia. I live in the
+                    city Charlotte, NC.</p>
+            </div>
+            <div class="image-headshot">
+                <img class="image-headshot__img" src="images/headshot.jpg" alt="My picture" />
+            </div>
+        </div>
+    </section>
+
+    <!--My exerience-->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p id="myexperience">I have experience in a bank as a loan officer and auditor. <br>
+            My hobby photography has grown into a profession. I like to create a beautiful and creative picture. This
+            curse was my first introduction to HTML and CSS. This is very exciting for me!
+        <div class="experience_box">
+            <div class="box_credit">Bank lending (2005-2007)<br></div>
+            <div class="box_auditor">Audit of banking operations (2008-2022)<br></div>
+            <div class="box_photo">Photographer (2020-current time).<br></div>
+            <div class="box_student">Student CTD (April, 2023 - current time).<br></div>
+        </div>
         </p>
-      </section> 
+    </section>
 
-      <section id="skills">
+    <!--My skills-->
+    <section id="skills">
         <h2>Skills</h2>
-          <ul id="list"> </ul>
-      </section>
+        <ul id="list"> </ul>
+    </section>
 
-      <section id="projects">
+    <!--My projects-->
+    <section id="projects">
         <h2>Projects</h2>
-         <ul id="listprojects"> </ul>
-      </section>
+        <ul id="listprojects"> </ul>
+    </section>
 
-      <section id="connect">
+    <!--Connect information-->
+    <section id="connect">
         <h2>Connect</h2>
-         <ul class="listConnect">
-            <li class="box_email"><a href= "https://accounts.google.com/SignOutOptions?hl=ru&continue=https://mail.google.com&service=mail&ec=GBRAFw"><img src="images/email.png" width="30" height="30"></a></li>
-            <li class="box_github" ><a href="https://github.com/Anastasiia2711"><img src="images/github.png" width="30" height="30"></a></li>
+        <ul class="listConnect">
+            <li class="box_email"><a
+                    href="https://accounts.google.com/SignOutOptions?hl=ru&continue=https://mail.google.com&service=mail&ec=GBRAFw"><img
+                        src="images/email.png" width="30" height="30"></a></li>
+            <li class="box_github"><a href="https://github.com/Anastasiia2711"><img src="images/github.png" width="30"
+                        height="30"></a></li>
             <li class="box_slack"><a href="U051FETBZHA"><img src="images/slack.png" width="30" height="30"></a></li>
-            <li class="box_linkedin"><a href= "linkedin - www.linkedin.com/in/anastasiia-eliseeva-82a424271"><img src="images/linkedin.png" width="30" height="30"></a></li>
-         </ul>
-      </section>
+            <li class="box_linkedin"><a href="linkedin - www.linkedin.com/in/anastasiia-eliseeva-82a424271"><img
+                        src="images/linkedin.png" width="30" height="30"></a></li>
+        </ul>
+    </section>
 
-     <section id = 'form'>
+
+    <!--Form fill/send message-->
+    <section id='form'>
         <h2>Leave a Message</h2>
-            <form id="leave_message" name="leave_message">
-                 <div class="box_leave_message">
-                    <label id="labelname" for= 'name'> Name</label>
-                    <input id= 'name' type= 'text' name= 'usersName' required= 'true'>
-                    <label id="labelemail" for= 'email'>Email Addres</label>
-                    <input id= 'email' type= 'email' name= 'usersEmail' required= 'true'><br>
-                    <label id= 'labelmessage' for= 'message'>Message</label>
-                    <textarea id= 'message' name= 'usersMessage' required= 'true'></textarea>
-                    <button id="submit" type= 'submit'>Submit</button> 
-                 </div> 
-                </form>
-     </section>
+        <form id="leave_message" name="leave_message">
+            <div class="box_leave_message">
+                <label id="labelname" for='name'> Name</label>
+                <input id='name' type='text' name='usersName' required='true'>
+                <label id="labelemail" for='email'>Email Addres</label>
+                <input id='email' type='email' name='usersEmail' required='true'><br>
+                <label id='labelmessage' for='message'>Message</label>
+                <textarea id='message' name='usersMessage' required='true'></textarea>
+                <button id="submit" type='submit'>Submit</button>
+            </div>
+        </form>
+    </section>
 
-     <section id= 'messages'>
+    <section id='messages'>
         <h2>Messages</h2>
         <ul id="sendmessage"></ul>
-        <span></span>
-        <span></span>
+    </section>
 
-     </section>
 
-     <footer id="footer">
+    <!--Footer-->
+    <footer id="footer">
         <div class="box_footer"></div>
 
-     </footer>
-     
-     <script src="js/index.js">
-     
+    </footer>
 
-     </script>
-    </body>
+    <script src="js/index.js">
+
+
+    </script>
+</body>
+
 </html>

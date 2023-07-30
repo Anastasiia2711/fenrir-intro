@@ -39,11 +39,12 @@ messageForm.item(0).addEventListener("submit", (event) => {
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
     const editMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> send: <span>${message}</span>`;
+    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> <span>send:</span> <span>${message}</span>`;
 
 //create remove button
     const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
+    //removeButton.innerText = ('remove');
+    removeButton.innerText = ('remove');
     removeButton.type = 'button';
 
     removeButton.addEventListener('click', () => {
@@ -54,17 +55,17 @@ messageForm.item(0).addEventListener("submit", (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-    //     const editButton = document.createElement('button');
-    //     editButton.innerText = 'edit';
-    //     editButton.type = 'button';
+        const editButton = document.createElement('button');
+        editButton.innerText = 'edit';
+        editButton.type = 'button';
 
-    //     editButton.addEventListener('click', () => {
-    //         const entry = editButton.parentNode;
-    //         entry.edit();
-    //    });
+        editButton.addEventListener('click', () => {
+            const entry = editButton.parentNode;
+            entry.edit();
+       });
 
-    //     editMessage.appendChild(editButton);
-    //     messageList.appendChild(editMessage);
+        editMessage.appendChild(editButton);
+        messageList.appendChild(editMessage);
 
     messageForm.item(0).reset();
 
@@ -112,5 +113,23 @@ fetch('https://api.github.com/users/Anastasiia2711/repos')
 })
 .catch(console.error);
 
-
-
+// const openMenu = () => {
+//     document.getElementById('mobile-menu').classList.add('show')
+//     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+//     const body = document.body;
+//     body.style.position = 'fixed';
+//     body.style.top = `-${scrollY}`;
+//   };
+  
+//   const closeMenu = () => {
+//     const body = document.body;
+//     const scrollY = body.style.top;
+//     body.style.position = '';
+//     body.style.top = '';
+//     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+//     document.getElementById('mobile-menu').classList.remove('show');
+//   }
+  
+//   window.addEventListener('scroll', () => {
+//     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+//   });
