@@ -56,7 +56,7 @@ messageForm.item(0).addEventListener("submit", (event) => {
     messageList.appendChild(newMessage);
 
         const editButton = document.createElement('button');
-        editButton.innerText = 'edit';
+        editButton.innerText = ('edit');
         editButton.type = 'button';
 
         editButton.addEventListener('click', () => {
@@ -112,24 +112,3 @@ fetch('https://api.github.com/users/Anastasiia2711/repos')
     }
 })
 .catch(console.error);
-
-// const openMenu = () => {
-//     document.getElementById('mobile-menu').classList.add('show')
-//     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-//     const body = document.body;
-//     body.style.position = 'fixed';
-//     body.style.top = `-${scrollY}`;
-//   };
-  
-//   const closeMenu = () => {
-//     const body = document.body;
-//     const scrollY = body.style.top;
-//     body.style.position = '';
-//     body.style.top = '';
-//     window.scrollTo(0, parseInt(scrollY || '0') * -1);
-//     document.getElementById('mobile-menu').classList.remove('show');
-//   }
-  
-//   window.addEventListener('scroll', () => {
-//     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-//   });
