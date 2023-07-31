@@ -43,7 +43,6 @@ messageForm.item(0).addEventListener("submit", (event) => {
 
 //create remove button
     const removeButton = document.createElement('button');
-    //removeButton.innerText = ('remove');
     removeButton.innerText = ('remove');
     removeButton.type = 'button';
 
@@ -68,7 +67,6 @@ messageForm.item(0).addEventListener("submit", (event) => {
         messageList.appendChild(editMessage);
 
     messageForm.item(0).reset();
-
     messageSection.hidden = false;
 
 });
