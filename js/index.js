@@ -9,7 +9,7 @@ copyright.innerHTML = `Anastasiia Eliseeva &copy ${thisYear}`;
 footer.appendChild(copyright);
 
 //create Skills
-const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'HTML', 'Cypress', 'Trello', 'Photoshop', 'Ligthroom', 'Bridge', 'CSS'];
+const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'Debbuging', 'HTML',  'Cypress', 'Trello', 'AJAX', 'Photoshop', 'Ligthroom', 'Bridge', 'CSS', 'API' ];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
 
@@ -43,8 +43,9 @@ messageForm.item(0).addEventListener("submit", (event) => {
 
 //create remove button
     const removeButton = document.createElement('button');
-    removeButton.innerText = ('remove');
+    removeButton.innerText = ('');
     removeButton.type = 'button';
+    removeButton.className = "fa-solid fa-trash fa-lg";
 
     removeButton.addEventListener('click', () => {
         const entry = removeButton.parentNode;
@@ -54,17 +55,20 @@ messageForm.item(0).addEventListener("submit", (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-        const editButton = document.createElement('button');
-        editButton.innerText = ('edit');
-        editButton.type = 'button';
+    const editButton = document.createElement('button');
+    editButton.innerText = ('');
+    editButton.type = 'button';
+    editButton.className = 'fa-solid fa-feather fa-lg';
 
-        editButton.addEventListener('click', () => {
-            const entry = editButton.parentNode;
-            entry.edit();
-       });
+    editButton.addEventListener('click', () => {
+        const editMessage =  newMessage.parentNode;
+        if(editMessage !== null) {
+            newMessage.textContent = editMessage;
+        }
+    });
 
-        editMessage.appendChild(editButton);
-        messageList.appendChild(editMessage);
+    newMessage.appendChild(editButton);
+    messageList.appendChild(newMessage);
 
     messageForm.item(0).reset();
     messageSection.hidden = false;

@@ -8,18 +8,6 @@ body {
     padding-bottom: 5px;
 }
 
-/* .hamburger {
-    display: flex;
-    flex-direction: column;
-}
-
-.hamburger div {
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    background: #242222;
-} */
-
 .header {
     text-align: center;
     padding-top: 5px;
@@ -441,6 +429,23 @@ h2 {
     text-decoration: none;
 }
 
+.fa-trash {
+    color: #21325E;
+    margin-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.fa-feather {
+    color: #21325E;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.button fa-trash {
+    border: none;
+}
+
 #footer {
     background-color: #F0F0F0;
     border-style: dashed;
@@ -456,7 +461,7 @@ h2 {
     padding-bottom: 10px;
 }
 
-
+/* tablet version*/
 @media screen and (max-width: 900px) {
     .image-headshot {
         margin-right: 0;
