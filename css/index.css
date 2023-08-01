@@ -432,14 +432,14 @@ h2 {
 .fa-trash {
     color: #21325E;
     margin-right: 3%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .fa-feather {
     color: #21325E;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .button fa-trash {
