@@ -39,9 +39,9 @@ messageForm.item(0).addEventListener("submit", (event) => {
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
     const editMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> <span>send:</span> <span>${message}</span>`;
+    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> <i>send:</i> <span>${message}</span><button class='editButton'> </button>'`;
 
-//create remove button
+    //create remove button
     const removeButton = document.createElement('button');
     removeButton.innerText = ('');
     removeButton.type = 'button';
@@ -55,18 +55,20 @@ messageForm.item(0).addEventListener("submit", (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-    const editButton = document.createElement('button');
-    editButton.innerText = ('');
-    editButton.type = 'button';
+    //create edit button
+    const editButton = newMessage.querySelector('.editButton')
     editButton.className = 'fa-solid fa-feather fa-lg';
+    editButton.addEventListener('click', function () {
+        
+        const inputField = document.createElement('input');
+        inputField.type = 'text';
+        inputField.value = message;
 
-    editButton.addEventListener('click', () => {
-        const editMessage =  newMessage.parentNode;
-        if(editMessage !== null) {
-            newMessage.textContent = editMessage;
-        }
+        const messageSpan = newMessage.querySelector('span');
+        messageSpan.replaceWith(inputField);
+
     });
-
+    
     newMessage.appendChild(editButton);
     messageList.appendChild(newMessage);
 

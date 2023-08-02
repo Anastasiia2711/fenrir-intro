@@ -407,6 +407,7 @@ h2 {
 
 #sendmessage li {
     list-style-type: none;
+    padding: 5px;
 }
 
 #sendmessage li a {
@@ -421,6 +422,18 @@ h2 {
     font-size: 25px;
     color: #21325E;
     text-decoration: none;
+}
+
+#sendmessage i {
+    margin: 20px;
+    font-size: 25px;
+    color: #21325E;
+    text-decoration: none;
+}
+
+#sendmessage input {
+    width: 10%;
+    margin-right: 3%;
 }
 
 #sendmessage li a text {
@@ -440,10 +453,6 @@ h2 {
     color: #21325E;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-.button fa-trash {
-    border: none;
 }
 
 #footer {
@@ -504,7 +513,7 @@ h2 {
 
     .navigation {
         display: block;
-        width: 100%;
+        width: 70%;
         height: auto;
         background-color: #c0c3d0;
     }
