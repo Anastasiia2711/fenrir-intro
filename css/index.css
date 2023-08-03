@@ -66,8 +66,8 @@ body {
     font-size: 25px;
     color: #21325E;
     text-align: center;
-    margin: 0px 10px 10px 10px;
-    padding: 10px 10px 0px 0px;
+    margin: 0px 5px 10px 10px;
+    padding: 10px 5px 0px 0px;
     list-style: none;
     width: 100%;
 }
@@ -475,6 +475,9 @@ h2 {
     .image-headshot {
         margin-right: 0;
     }
+}
+.navigation a {
+    font-size: 20px;
 }
 
 /* mobile version */
