@@ -9,7 +9,7 @@ copyright.innerHTML = `Anastasiia Eliseeva &copy ${thisYear}`;
 footer.appendChild(copyright);
 
 //create Skills
-const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'HTML', 'Cypress', 'Trello', 'Photoshop', 'Ligthroom', 'Bridge', 'CSS'];
+const skills = [id = 'JavaScript', 'Banking', 'Finance', 'GitHub', 'VSC', 'Debbuging', 'HTML',  'Cypress', 'Trello', 'AJAX', 'Photoshop', 'Ligthroom', 'Bridge', 'CSS', 'API' ];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
 
@@ -39,13 +39,13 @@ messageForm.item(0).addEventListener("submit", (event) => {
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
     const editMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> <span>send:</span> <span>${message}</span>`;
+    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> <i>send:</i> <span>${message}</span><button class='editButton'> </button>'`;
 
-//create remove button
+    //create remove button
     const removeButton = document.createElement('button');
-    //removeButton.innerText = ('remove');
-    removeButton.innerText = ('remove');
+    removeButton.innerText = ('');
     removeButton.type = 'button';
+    removeButton.className = "fa-solid fa-trash fa-lg";
 
     removeButton.addEventListener('click', () => {
         const entry = removeButton.parentNode;
@@ -55,20 +55,24 @@ messageForm.item(0).addEventListener("submit", (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-        const editButton = document.createElement('button');
-        editButton.innerText = 'edit';
-        editButton.type = 'button';
+    //create edit button
+    const editButton = newMessage.querySelector('.editButton')
+    editButton.className = 'fa-solid fa-feather fa-lg';
+    editButton.addEventListener('click', function () {
+        
+        const inputField = document.createElement('input');
+        inputField.type = 'text';
+        inputField.value = message;
 
-        editButton.addEventListener('click', () => {
-            const entry = editButton.parentNode;
-            entry.edit();
-       });
+        const messageSpan = newMessage.querySelector('span');
+        messageSpan.replaceWith(inputField);
 
-        editMessage.appendChild(editButton);
-        messageList.appendChild(editMessage);
+    });
+    
+    newMessage.appendChild(editButton);
+    messageList.appendChild(newMessage);
 
     messageForm.item(0).reset();
-
     messageSection.hidden = false;
 
 });
@@ -112,24 +116,3 @@ fetch('https://api.github.com/users/Anastasiia2711/repos')
     }
 })
 .catch(console.error);
-
-// const openMenu = () => {
-//     document.getElementById('mobile-menu').classList.add('show')
-//     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-//     const body = document.body;
-//     body.style.position = 'fixed';
-//     body.style.top = `-${scrollY}`;
-//   };
-  
-//   const closeMenu = () => {
-//     const body = document.body;
-//     const scrollY = body.style.top;
-//     body.style.position = '';
-//     body.style.top = '';
-//     window.scrollTo(0, parseInt(scrollY || '0') * -1);
-//     document.getElementById('mobile-menu').classList.remove('show');
-//   }
-  
-//   window.addEventListener('scroll', () => {
-//     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-//   });
